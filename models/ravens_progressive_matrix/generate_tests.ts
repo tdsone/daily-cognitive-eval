@@ -1,3 +1,5 @@
+// based on Automatic Generation of Raven’s Progressive Matrices by Ke Wang and Zhendong Su
+
 interface MatrixCell {
   objects: RPMObject[];
 }

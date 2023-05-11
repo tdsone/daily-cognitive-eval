@@ -1,4 +1,6 @@
-// Generate digit span tests
+// Generate digit span tests based on
+// https://github.com/tadorfer/digit-span-test/blob/master/digitspantest_fw.py
+
 type DigitSequence = {
   digits: string;
   userResponse: string;
