@@ -1,19 +1,19 @@
 // generate stroop tests
 
-enum Color {
+export enum Color {
   Red = "red",
   Blue = "blue",
   Green = "green",
   Yellow = "yellow",
 }
 
-type StroopTrial = {
+export type StroopTrial = {
   word: Color;
   color: Color;
   isCongruent: boolean;
 };
 
-class StroopTest {
+export class StroopTest {
   numberOfTrials: number;
   trials: StroopTrial[];
   results: boolean[];
@@ -46,7 +46,7 @@ class StroopTest {
     }
   }
 
-  private simulateUserResponse(trial: StroopTrial): Color {
+  simulateUserResponse(trial: StroopTrial): Color {
     // Simulate the user's response; replace this with actual user input when integrating with frontend code
     return trial.color;
   }
